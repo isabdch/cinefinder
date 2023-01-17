@@ -11,6 +11,7 @@ import { Footer } from "../../components/footer/footer";
 import { Loading } from "../../components/loading/loading";
 
 import { IndexDiscover } from "../../styles/pagesStyles/discoverStyle";
+import Head from "next/head";
 
 export default function Discover() {
   const [data, setData] = useState(null);
@@ -54,6 +55,10 @@ export default function Discover() {
 
   return (
     <IndexDiscover dark={darkTheme}>
+      <Head>
+        <title>CineFinder | Discover</title>
+      </Head>
+
       <div className="container">
         <h1>Discover movies</h1>
 

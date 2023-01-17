@@ -1,5 +1,6 @@
 import { useContext, useEffect, useState } from "react";
 import { useRouter } from "next/router";
+import Head from "next/head";
 import Image from "next/image";
 
 import { Rating } from "react-simple-star-rating";
@@ -62,6 +63,9 @@ export default function Movie() {
   return (
     <IndexMovie dark={darkTheme}>
       {loading && creditsLoading && configLoading ? <Loading /> : null}
+      <Head>
+        <title>CineFinder | {data?.original_title}</title>
+      </Head>
       <div className="container">
         <div
           className="banner"
