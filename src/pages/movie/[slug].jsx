@@ -83,6 +83,7 @@ export default function Movie() {
         <div className="movie-info">
           <div className="image">
             <Image
+              unoptimized
               src={
                 data?.poster_path
                   ? configData?.images.secure_base_url +
@@ -174,6 +175,7 @@ export default function Movie() {
                       <div className="info-container">
                         <div className="image-info">
                           <Image
+                            unoptimized
                             src={
                               item?.profile_path
                                 ? configData?.images.secure_base_url +
@@ -206,6 +208,7 @@ export default function Movie() {
                       <div className="info-container">
                         <div className="image-info">
                           <Image
+                            unoptimized
                             src={
                               item?.profile_path
                                 ? configData?.images.secure_base_url +

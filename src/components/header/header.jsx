@@ -20,6 +20,7 @@ export function Header() {
         <h1>
           <Link href="/">
             <Image
+              unoptimized
               src="/assets/images/logo.svg"
               alt=""
               width={95}

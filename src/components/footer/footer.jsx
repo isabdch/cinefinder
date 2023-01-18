@@ -20,6 +20,7 @@ export function Footer() {
 
       <Link target="_blank" href="https://www.themoviedb.org/">
         <Image
+          unoptimized
           src="/assets/images/tmdb.svg"
           alt="The Movie Database"
           width={100}
